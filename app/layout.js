@@ -1,11 +1,6 @@
-import {Inter} from 'next/font/google'
 import NavBar from "../component/ui/NavBar";
 import '../app/globals.css';
 
-
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
 
@@ -17,7 +12,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Informacion sobre los pokemons" />
       </head>
 
-        <body className={inter.className} >
+        <body>
 
             <NavBar />
 

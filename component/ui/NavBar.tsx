@@ -14,27 +14,23 @@ const Header = () => {
             padding: '0 50px',
             backgroundColor: theme?.colors.gray900.value
         }}>
-           {/* <Image
-                src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"}
-                alt="icono de la app"
-                width={70}
-                height={70}
-            />*/}
+            { <Image
+            src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"}
+            alt="icono de la app"
+            width={70}
+            height={70}
+            />}
 
-            {/*<NextLink href="/" passHref>*/}
-            {/*    <Link>*/}
-            <Text color='white' h2>P</Text>
-            <Text color='white' h3>okémon</Text>
-            {/*    </Link>*/}
-            {/*</NextLink>*/}
+            <Link href="/">
+                <Text color='white' h2>P</Text>
+                <Text color='white' h3>okémon</Text>
+            </Link>
 
             <Spacer css={{ flex: 1 }}/>
 
-            {/*<NextLink href="/favorites" passHref>*/}
-            {/*    <Link css={{ marginRight: '10px' }}>*/}
-            <Text color='white' h3>Favoritos</Text>
-            {/*    </Link>*/}
-            {/*</NextLink>*/}
+            <Link css={{ marginRight: '10px' }} href="/favorites">
+                <Text color='white' h3>Favoritos</Text>
+            </Link>
 
         </div>
     );
